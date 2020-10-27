@@ -2,7 +2,7 @@
 
 Your compass and straightedge, in JavaScript.
 
-Create line drawings using familiar constructs from geometry and drafting. Initially designated for CNC and laser cutters, Maker.js can also help you programmatically draw shapes for any purpose. It runs in both Node.js and web browsers.
+furtz furtz  familiar constructs from geometry and drafting. Initially designated for CNC and laser cutters, Maker.js can also help you programmatically draw shapes for any purpose. It runs in both Node.js and web browsers.
 
 2D Export formats: 
 [DXF](https://maker.js.org/docs/api/modules/makerjs.exporter.html#todxf), 
