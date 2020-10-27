@@ -28,12 +28,49 @@
         MakerJsPlayground.fontDir = '../fonts/';
     </script>
 
+    
+    
+    
+    
+    
+    
+    
 </head>
 <body class="no-notes collapse-annotation collapse-flow collapse-insert-menu">
     <main>  
         <section id="blueprint-canvas">
             <svg id="grid">
                 <defs>
+                    
+                    
+                    
+                    var makerjs = require('makerjs');
+
+function TextDemo(font, text, fontSize, combine, center) {
+    this.models = {
+        text: new makerjs.models.Text(font, text, fontSize, combine, center)
+    };
+}
+
+TextDemo.metaParameters = [
+    { title: "font", type: "font", value: '*' },
+    { title: "text", type: "text", value: 'Hello' },
+    { title: "font size", type: "range", min: 10, max: 200, value: 72 },
+    { title: "combine", type: "bool", value: false },
+    { title: "center character origin", type: "bool", value: false }
+];
+
+module.exports = TextDemo;
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     <pattern id="pattern1" x="0" y="0" width=".1" height=".1">
                         <line x1="0" y1="0" x2="0" y2="100%" class="grid-line-1"></line>
                         <line x1="0" y1="0" x2="100%" y2="0" class="grid-line-1"></line>
