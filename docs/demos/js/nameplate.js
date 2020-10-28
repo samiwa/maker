@@ -36,7 +36,7 @@ Nameplate.metaParameters = [
         title: "font", type: "select", value: [
             'allertastencil/AllertaStencil-Regular.ttf',
             'blackopsone/BlackOpsOne-Regular.ttf',
-            'rulerstencil/RulerStencil-Regular.ttf'
+            'rulerstencil/RulerStencil-Regular.ttf',
             'keaniaone/KeaniaOne-Regular.ttf',
             'plaster/Plaster-Regular.ttf',
             'sirinstencil/SirinStencil-Regular.ttf',
