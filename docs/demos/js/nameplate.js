@@ -36,14 +36,14 @@ Nameplate.metaParameters = [
         title: "font", type: "select", value: [
             'allertastencil/AllertaStencil-Regular.ttf',
             'blackopsone/BlackOpsOne-Regular.ttf',
-            'emblemaone/EmblemaOne-Regular.ttf',
+            'rulerstencil/RulerStencil-Regular.ttf'
             'keaniaone/KeaniaOne-Regular.ttf',
             'plaster/Plaster-Regular.ttf',
             'sirinstencil/SirinStencil-Regular.ttf',
             'stardosstencil/StardosStencil-Bold.ttf',
             'stardosstencil/StardosStencil-Regular.ttf',
             'wallpoet/Wallpoet-Regular.ttf'
-            'rulerstencil/RulerStencil-Regular.ttf'
+            
         ]
     },
     { title: "text", type: "text", value: 'Hello' },
