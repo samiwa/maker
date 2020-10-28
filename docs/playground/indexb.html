@@ -472,6 +472,45 @@ this.paths = {
     mouth: new makerjs.paths.Arc([0, 0], 50, 225, 315),
     wink: new makerjs.paths.Line([-35, 20], [-15, 20])
 };
+
+
+var makerjs = require('makerjs');
+var _nameplate = require('makerjs-nameplate');
+
+function Nameplate(fontPath, text, fontSize, fontMargin, boltMargin, boltRadius, rounded) {
+
+    var _this = this;
+
+    if (makerjs.environment == makerjs.environmentTypes.NodeJs) {
+
+        (function () {
+            var opentype = require('opentype.js');
+            var font = opentype.loadSync('./fonts/' + fontPath);
+
+            //use the models from makerjs-nameplate
+            _this.models = new _nameplate(font, text, fontSize, fontMargin, boltMargin, boltRadius, rounded).models;
+        })();
+
+    } else {
+
+        //load a font asynchronously
+        opentype.load('/fonts/' + fontPath, function (err, font) {
+            if (!err) {
+
+                //use the models from makerjs-nameplate
+                _this.models = new _nameplate(font, text, fontSize, fontMargin, boltMargin, boltRadius, rounded).models;
+
+                //"playgroundRender" is strictly a Playground function - in your app, call your own callback.
+                playgroundRender(_this);
+            }
+        });
+    }
+}
+
+
+
+
+
 this.notes = '# Welcome to the Maker.js playground \n You can edit the JavaScript code, then click **Run** (or CTRL + Enter) to see your drawing.';
 //press enter here to add more blank lines
 </pre>
