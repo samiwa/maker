@@ -43,6 +43,7 @@ Nameplate.metaParameters = [
             'stardosstencil/StardosStencil-Bold.ttf',
             'stardosstencil/StardosStencil-Regular.ttf',
             'wallpoet/Wallpoet-Regular.ttf'
+            'rulerstencil/RulerStencil-Regular.ttf'
         ]
     },
     { title: "text", type: "text", value: 'Hello' },
