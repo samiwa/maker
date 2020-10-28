@@ -121,6 +121,23 @@ var fonts = {
       "stencil"
     ]
   },
+  
+  
+  
+  
+  
+   "rulerstencil-regular": {
+    "displayName": "Ruler Stencil",
+    "path": "rulerstencil/RulerStencil-Regular.ttf",
+    "tags": [
+      "stencil"
+    ]
+  },
+  
+  
+  
+  
+  
   "sirinstencil-regular": {
     "displayName": "Sirin Stencil",
     "path": "sirinstencil/SirinStencil-Regular.ttf",
